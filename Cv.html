@@ -6,33 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asassa.cs">
+    <style>
+        body {
+          margin-top: 100px;
+    position: relative;
+}
+    </style>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row justify-content-md-center">
-            <div class="col-sm-3 fix-left">
-                <center><img src="images (1).jpeg" class="img-fluid rounded-circle" alt="Responsive image"></center> <br>
-                <center><h3>Bambang</h3></center>
-                <center><nav id="navbar-example3" class="navbar navbar-light text-center">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <nav class="nav nav-pills flex-column">
-                      <a class="nav-link" href="#item-1">Home</a>
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#item-1-1">Profile</a>
-                        <a class="nav-link ml-3 my-1" href="#item-1-2">Alamat</a>
-                      </nav>
-                      <a class="nav-link" href="#item-2">Lorem</a>
-                      <a class="nav-link" href="#item-3">Pengalaman Kerja</a>
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#item-3-1">Video</a>
-                        <a class="nav-link ml-3 my-1" href="#item-3-2">Foto</a>
-                      </nav>
-                    </nav>
-                </nav></center>                 
+<body  data-spy="scroll" data-target="#list-example">
+    <div class="container">
+        <div class="row justy">
+            <div class="col-sm-12"></div>
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" data-target="#Home" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Hobi">Hobi</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Lorem">Lorem</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Pengalaman">Pengalaman Kerja</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Video">Video</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Foto">Foto</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="col-sm-9">
+            <div id="bim" class="col-sm-12 bd-content">
                 <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <h1 id="Home"></h1>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="images (2).jpeg" class="d-block w-100" alt="...">
@@ -50,7 +71,7 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </div>
-                    <h5 id="item-1-1">Profile</h5>
+                    <h5 id="Profile">Profile</h5>
                     <p>Nama: Bambang saputri</p>
                     <br>
                     <p>ttl: wuhan,09-09-2000</p><br>
@@ -58,7 +79,7 @@
                     <p>Hobi :Renang</p><br>
                     <p>Makanan Kesukaan : Mendoan</p><br>
                     <p>Minuman Kesukaan : Mari Mas</p>
-                    <h5 id="item-1-2">Alamat</h5>
+                    <h5 id="Hobi">Hobi</h5>
                     <div class="container">
                         <div class="row justify-content-md-center">
                             <div class="col-sm-6">
@@ -87,16 +108,16 @@
                             </div>
                         </div>
                     </div>
-                    <h4 id="item-2">Lorem aja udah</h4>
+                    <h4 id="Lorem">Lorem aja udah</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda aspernatur tempore rerum reiciendis corrupti consequuntur dicta harum fuga! Sed nostrum magnam explicabo quibusdam sit quod incidunt veniam non quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus harum perferendis commodi voluptates dolorem voluptatibus, sed voluptate reprehenderit dignissimos tempora, aperiam, consectetur distinctio maiores sapiente a cupiditate quo illum.</p>
-                    <h4 id="item-3"></h4>
+                    <h4 id="Pengalaman"></h4>
                     <p><h3>Pengalaman Kerja</h3></p>
                     <br><ul>
                         <li>Makan mie 3</li>
                         <li>Rebahan 24 jam</li>
                         <li>Main game 48 jam</li>
                     </ul>
-                    <h5 id="item-3-1"></h5>
+                    <h5 id="Vidoe"></h5>
                     <p><h3>Video</h3></p>
                     <div class="row">
                         <div class="col-sm-6">
@@ -110,18 +131,19 @@
                             </div>
                         </div>
                     </div>
-                    <h5 id="item-3-2"></h5>
+                    <h5 id="Foto"></h5>
                     <p><h3>Foto</h3></p>
                     <div class="row">
                         <div class="col-sm-6">
-                            <img src="images.jpeg" alt="">
+                            <img src="images.jpeg" class="img-fluid" alt="">
                         </div>
                         <div class="col-sm-6">
-                            <img src="images.jpeg" alt="">
+                            <img src="images.jpeg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>                  
             </div>
+        </div>
         </div>
     </div>
     
@@ -129,8 +151,14 @@
 
 
 
-    <script src="boot/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="boot/jquery-3.4.1.min.js"></script>
     <script src="boot/js/popper.js"></script>
     <script src="boot/js/bootstrap.min.js"></script>
+    <script>
+    $('[data-spy="scroll"]').each(function () {
+    var $spy = $(this).scrollspy('refresh')
+    })
+    </script>
+
 </body>
 </html>
